@@ -1,0 +1,19 @@
+.content-container {
+    position: absolute;
+    height: calc(100% - 64px);
+    width: 100%;
+    top: 64px;
+    left: 0;
+    padding: 0 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.content {
+    position: relative;
+    left: 50%;
+    max-width: 700px;
+    width: 100%;
+    transform: translateX(-50%);
+}
