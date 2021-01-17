@@ -7,7 +7,7 @@ import './Comment.css';
 export const CommentCard = (props: CommentCardProps) => {
     const { comment, commentTime } = useCommentCard(props);
 
-    if (!comment) {
+    if (!comment || comment.dead || comment.deleted) {
         return null;
     }
 

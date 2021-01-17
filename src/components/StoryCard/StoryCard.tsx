@@ -8,7 +8,7 @@ import './StoryCard.css';
 export const StoryCardComponent = (props: StoryCardProps) => {
     const { story, index, commentIds, showComments, storyUrlHostname, storyTime, toggleComments } = useStoryCard(props);
 
-    if (!story) {
+    if (!story || story.dead || story.deleted) {
         return null;
     }
 
